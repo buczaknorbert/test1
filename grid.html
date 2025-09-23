@@ -1,0 +1,45 @@
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Układ Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        ul li {
+            text-align: center;
+        }
+        .bottom-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Układ Grid</h1>
+    <div class="container">
+        <div>
+            <img src="https://via.placeholder.com/400" alt="Obrazek">
+        </div>
+        <div>

@@ -1,0 +1,59 @@
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Układ Flexbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .left, .right {
+            flex: 1;
+            margin-right: 2%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        ul li {
+            margin-right: 10px;
+        }
+        .bottom-container {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h1>Układ Flexbox</h1>
+    <div class="container">
+        <div class="left">
+            <img src="https://via.placeholder.com/400" alt="Obrazek">
+        </div>
+        <div class="right">
+            <ul>
+                <li>Element 1</li>
+                <li>Element 2</li>
+                <li>Element 3</li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom-container">
+        <div><img src="https://via.placeholder.com/100" alt="Obrazek 1"></div>
+        <div><img src="https://via.placeholder.com/100" alt="Obrazek 2"></div>
+    </div>
+</body>
+</html>

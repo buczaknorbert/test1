@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Układ Float: left</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            overflow: hidden;
+        }
+        .left, .right {
+            float: left;
+            width: 48%;
+            margin-right: 2%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h1>Układ Float: left</h1>
+    <div class="container">
+        <div class="left">
+            <img src="https://via.placeholder.com/400" alt="Obrazek">
+        </div>
+        <div class="left">
+            <ul>
+                <li>Element 1</li>
+                <li>Element 2</li>
+                <li>Element 3</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <div class="left">
+            <div><img src="https://via.placeholder.com/100" alt="Obrazek 1"></div>
+        </div>
+        <div class="left">
+            <div><img src="https://via.placeholder.com/100" alt="Obrazek 2"></div>
+        </div>
+    </div>
+</body>
+</html>

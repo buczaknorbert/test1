@@ -1,0 +1,59 @@
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Układ Inline-block</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            font-size: 0;
+        }
+        .left, .right {
+            display: inline-block;
+            vertical-align: top;
+            width: 48%;
+            margin-right: 2%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Układ Inline-block</h1>
+    <div class="container">
+        <div class="left">
+            <img src="https://via.placeholder.com/400" alt="Obrazek">
+        </div>
+        <div class="left">
+            <ul>
+                <li>Element 1</li>
+                <li>Element 2</li>
+                <li>Element 3</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left">
+            <div><img src="https://via.placeholder.com/100" alt="Obrazek 1"></div>
+        </div>
+        <div class="left">
+            <div><img src="https://via.placeholder.com/100" alt="Obrazek 2"></div>
+        </div>
+    </div>
+</body>
+</html>

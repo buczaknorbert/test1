@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
@@ -10,10 +11,12 @@
         h1 {
             text-align: center;
         }
-        .container {
+        div {
             display: grid;
-            grid-template-columns: 1fr 1fr;
             gap: 20px;
+        }
+        div > div {
+            grid-template-columns: 1fr 1fr;
         }
         img {
             max-width: 100%;
@@ -29,17 +32,25 @@
         ul li {
             text-align: center;
         }
-        .bottom-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
     </style>
 </head>
 <body>
     <h1>Układ Grid</h1>
-    <div class="container">
+    <div style="grid-template-columns: 1fr 1fr;">
         <div>
             <img src="https://via.placeholder.com/400" alt="Obrazek">
         </div>
         <div>
+            <ul>
+                <li>Element 1</li>
+                <li>Element 2</li>
+                <li>Element 3</li>
+            </ul>
+        </div>
+    </div>
+    <div style="grid-template-columns: 1fr 1fr;">
+        <div><img src="https://via.placeholder.com/100" alt="Obrazek 1"></div>
+        <div><img src="https://via.placeholder.com/100" alt="Obrazek 2"></div>
+    </div>
+</body>
+</html>

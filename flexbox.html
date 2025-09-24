@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
@@ -10,11 +11,11 @@
         h1 {
             text-align: center;
         }
-        .container {
+        div {
             display: flex;
             justify-content: space-between;
         }
-        .left, .right {
+        div > div {
             flex: 1;
             margin-right: 2%;
         }
@@ -31,19 +32,15 @@
         ul li {
             margin-right: 10px;
         }
-        .bottom-container {
-            display: flex;
-            justify-content: space-between;
-        }
     </style>
 </head>
 <body>
     <h1>Układ Flexbox</h1>
-    <div class="container">
-        <div class="left">
+    <div>
+        <div>
             <img src="https://via.placeholder.com/400" alt="Obrazek">
         </div>
-        <div class="right">
+        <div>
             <ul>
                 <li>Element 1</li>
                 <li>Element 2</li>
@@ -51,7 +48,7 @@
             </ul>
         </div>
     </div>
-    <div class="bottom-container">
+    <div>
         <div><img src="https://via.placeholder.com/100" alt="Obrazek 1"></div>
         <div><img src="https://via.placeholder.com/100" alt="Obrazek 2"></div>
     </div>

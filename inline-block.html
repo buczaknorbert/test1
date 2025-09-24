@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
@@ -10,10 +11,10 @@
         h1 {
             text-align: center;
         }
-        .container {
+        div {
             font-size: 0;
         }
-        .left, .right {
+        div > div {
             display: inline-block;
             vertical-align: top;
             width: 48%;
@@ -35,11 +36,11 @@
 </head>
 <body>
     <h1>Układ Inline-block</h1>
-    <div class="container">
-        <div class="left">
+    <div>
+        <div>
             <img src="https://via.placeholder.com/400" alt="Obrazek">
         </div>
-        <div class="left">
+        <div>
             <ul>
                 <li>Element 1</li>
                 <li>Element 2</li>
@@ -47,13 +48,9 @@
             </ul>
         </div>
     </div>
-    <div class="container">
-        <div class="left">
-            <div><img src="https://via.placeholder.com/100" alt="Obrazek 1"></div>
-        </div>
-        <div class="left">
-            <div><img src="https://via.placeholder.com/100" alt="Obrazek 2"></div>
-        </div>
+    <div>
+        <div><img src="https://via.placeholder.com/100" alt="Obrazek 1"></div>
+        <div><img src="https://via.placeholder.com/100" alt="Obrazek 2"></div>
     </div>
 </body>
 </html>
